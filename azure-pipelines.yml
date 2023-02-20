@@ -18,6 +18,8 @@ steps:
     targetType: 'inline'
     script: |
       Write-Host 'Hi'
+  env: 
+    system_accesstoken: $(System.AccessToken)
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
